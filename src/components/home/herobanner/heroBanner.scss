@@ -1,0 +1,248 @@
+@import '../../../styles/index.scss';
+
+.home-container {
+    padding: 0 40px;
+
+    .home-content {
+        position: relative;
+
+        .slick-slider {
+            .slick-arrow {
+                &::before {
+                    display: none;
+                }
+            }
+
+            .slide {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.3);
+                    z-index: 1;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100vh;
+                    object-fit: cover;
+                }
+
+                .slide-content {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    color: white;
+                    width: 100%;
+                    z-index: 2;
+
+                    .slide-title {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 43px;
+                            height: auto;
+                            margin: 0 10px;
+                        }
+
+                        h2 {
+                            @include font-size(22px);
+                            @include font-weight(400);
+                            margin: 0;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    h3 {
+                        @include font-size(130px);
+                        @include font-weight(700);
+                        @include font-family('Old Standard TT');
+                        margin: 0;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .custom-arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 3;
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 0;
+                width: 43px;
+                height: 58px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .custom-prev {
+                left: 30px;
+                transition: left 0.3s ease-in-out;
+
+                &:hover {
+                    left: 23px;
+                }
+            }
+
+            .custom-next {
+                right: 30px;
+                transition: right 0.3s ease-in-out;
+
+                &:hover {
+                    right: 23px;
+                }
+            }
+        }
+
+        // .slick-dots {
+        //     bottom: 25px;
+        //     li {
+        //         button:before {
+        //             color: white;
+        //             opacity: 0.5;
+        //         }
+        //         &.slick-active button:before {
+        //             opacity: 1;
+        //         }
+        //     }
+        // }
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(80px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromTop {
+    from {
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .slide-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        width: 100%;
+        animation: fadeIn 0.5s ease-out 0.5s both;
+
+        .slide-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .left-img {
+                animation: slideFromLeft .9s ease-out both;
+            }
+
+            h2 {
+                @include font-size(36px);
+                @include font-weight(700);
+                margin: 0 10px;
+                animation: slideFromTop .9s ease-out both;
+            }
+
+            .right-img {
+                animation: slideFromRight .9s ease-out both;
+            }
+
+            img {
+                width: 50px;
+                height: auto;
+            }
+        }
+
+        h3 {
+            @include font-size(24px);
+            @include font-weight(400);
+            @include font-family('Old Standard TT');
+            margin: 0;
+            animation: slideFromTop 1.3s ease-out both;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.slick-slide {
+    &:not(.slick-active) {
+        .slide-content {
+            .slide-title {
+
+                .left-img,
+                h2,
+                .right-img {
+                    opacity: 0;
+                }
+            }
+
+            h3 {
+                opacity: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@mixin font-size($size) {
+    font-size: $size;
+}
+
+@mixin font-weight($weight) {
+    font-weight: $weight;
+}
+
+@mixin line-height($height) {
+    line-height: $height;
+}
+
+@mixin letter-spacing($spacing) {
+    letter-spacing: $spacing;
+}
+
+@mixin font-family($family) {
+    font-family: $family;
+}

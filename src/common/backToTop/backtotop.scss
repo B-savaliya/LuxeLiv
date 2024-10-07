@@ -1,0 +1,26 @@
+@import "../../styles/index.scss";
+.backtotop {
+  position: fixed;
+  bottom: 50px;
+  right: 13px;
+  padding: 10px 20px;
+background-color: var(--theme-yellow-background);
+border:none;
+border-radius: 5px;
+cursor: pointer;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px); 
+  pointer-events: none; 
+  @media (max-width: 768px) {
+    bottom: 25px;
+    right: 25px;
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+}
+.backtotop.show {
+  opacity: 1;
+  transform: translateY(0); 
+  pointer-events: auto; 
+}

@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f6f8fb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  display: block;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+span,
+a,
+img,
+em,
+strong,
+i,
+small,
+code,
+label,
+button,
+input,
+select,
+textarea {
+  display: block;
+}
+
+::selection {
+  background-color: var(--theme-selection-bgcolor);
+  color: var(--theme-selection-text-color);
+}
