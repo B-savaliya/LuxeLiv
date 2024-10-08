@@ -1,0 +1,48 @@
+@import "../../../../../styles/index.scss";
+
+
+.greenhouse-hero-banner-container {
+    margin: 0 40px !important;
+.greenhouse-hero-banner {
+    background-image: url('../../../../../assets/images/heroSlider\ \(4\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    .greenhouse-hero-banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        .greenhouse-sutitlt {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            svg{
+                width: 60px;
+                height: 20px;
+                path{   
+                    stroke: var(--theme-color-secondary);
+                    stroke-width: 2px;}
+            }
+            p{
+                @include font-size(22px);
+                @include font-weight(300);
+                color: var(--theme-color-secondary);
+                font-family: "open-sans", sans-serif;
+                letter-spacing: 4px;
+            }
+        }
+        h1{
+            text-transform: uppercase;
+            @include font-size(130px);
+            @include font-weight(700);
+            font-family: "Old Standard TT", serif;
+            color: var(--theme-color-secondary);
+        }
+    }
+    }
+}
