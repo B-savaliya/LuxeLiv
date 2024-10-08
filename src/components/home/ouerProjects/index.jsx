@@ -3,7 +3,22 @@ import './ourProjects.scss'
 import propertyImg1 from '../../../assets/images/property-f-img-1.jpg'
 import propertyImg2 from '../../../assets/images/property-f-img-2.jpg'
 
-const OurProjects = () => {
+const OtherProjects = () => {
+    const projectsData = [
+        {
+            image: propertyImg1,
+            alt: "Residential House",
+            title: "Residential House",
+            description: "A residential house is a private dwelling designed for individuals or families, offering comfort, privacy, and personal living space."
+        },
+        {
+            image: propertyImg2,
+            alt: "Rooftop Apartment",
+            title: "Rooftop Apartment",
+            description: "A rooftop apartment is a living space located on the top floor of a building, often featuring scenic views, outdoor terraces, and a unique urban living experience."
+        }
+    ];
+
     return (
         <div>
             <div className="our-projects-container">
@@ -21,33 +36,22 @@ const OurProjects = () => {
                     </div>
                 </div>
                 <div className="our-projects-content">
-                    <div className="our-projects-content-item">
-                        <div className="our-projects-content-item-img">
-                            <img src={propertyImg1} alt="Residential House" />
-                            <div className="image-overlay-text">ARCHITECT COMMIT</div>
+                    {projectsData.map((project, index) => (
+                        <div key={index} className="our-projects-content-item">
+                            <div className="our-projects-content-item-img">
+                                <img src={project.image} alt={project.alt} />
+                                <div className="image-overlay-text">ARCHITECT COMMIT</div>
+                            </div>
+                            <div className="our-projects-content-item-title">
+                                <h2>{project.title}</h2>
+                                <p>{project.description}</p>
+                            </div>
                         </div>
-                        <div className="our-projects-content-item-title">
-                            <h2>Residential House</h2>
-                            <p>A residential house is a private dwelling designed for individuals or families,
-                                offering comfort, privacy, and personal living space.</p>
-                        </div>
-                    </div>
-                    <div className="our-projects-content-item">
-                        <div className="our-projects-content-item-img">
-                            <img src={propertyImg2} alt="Rooftop Apartment" />
-                            <div className="image-overlay-text">ARCHITECT COMMIT</div>
-                        </div>
-                        <div className="our-projects-content-item-title">
-                            <h2>Rooftop Apartment</h2>
-                            <p>A rooftop apartment is a living space located on the top floor of a building,
-                                often featuring scenic views, outdoor terraces, and a unique urban living
-                                experience.</p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>
     )
 }
 
-export default OurProjects
+export default OtherProjects

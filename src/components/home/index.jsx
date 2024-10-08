@@ -1,13 +1,16 @@
 import React from 'react'
 import HeroBanner from './herobanner'
 import ArchitectureMind from './architectureMind'
-import OurProjects from './ouerProjects'
+import FromOurBlog from './fromOurBlog'
+import OtherProjects from './ouerProjects'
+
 const Home = () => {
     return (
         <div>
             <HeroBanner />
             <ArchitectureMind />
-            <OurProjects />
+            <OtherProjects />
+            <FromOurBlog />
         </div>
     )
 }
