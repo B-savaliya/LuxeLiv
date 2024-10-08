@@ -1,20 +1,21 @@
 import React from 'react'
 import './header.scss'
 import logo from '../../assets/logo/tempLogoDarkImg.png'
+import { Link } from 'react-router-dom'
 
 function Header() {
     return (
         <header>
             <div className='header-content'>
-                <a className='header-logo'>
+                <Link to="/" className='header-logo'>
                     <img src={logo} alt='logo' />
-                </a>
+                </Link>
                 <div className='header-actions'>
-                    <a>Home</a>
-                    <a>Property</a>
-                    <a>Pages</a>
-                    <a>Blog</a>
-                    <a>Contact</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/property">Property</Link>
+                    <Link to="/pages">Pages</Link>
+                    <Link to="/blog">Blog</Link>
+                    <Link to="/contact">Contact</Link>
                 </div>
             </div>
         </header >
