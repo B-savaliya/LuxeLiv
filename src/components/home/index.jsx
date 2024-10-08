@@ -2,7 +2,8 @@ import React from 'react'
 import HeroBanner from './herobanner'
 import ArchitectureMind from './architectureMind'
 import FromOurBlog from './fromOurBlog'
-import OtherProjects from './ouerProjects'
+import OtherProjects from './otherProjects'
+import OurWork from './ourWork'
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <ArchitectureMind />
             <OtherProjects />
             <FromOurBlog />
+            <OurWork />
         </div>
     )
 }
