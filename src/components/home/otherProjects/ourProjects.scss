@@ -58,7 +58,7 @@
             transition: all 0.3s ease;
 
             .our-projects-content-item-img {
-                position: relative; // Add this to position the pseudo-element
+                position: relative;
                 overflow: hidden;
 
                 &::after {

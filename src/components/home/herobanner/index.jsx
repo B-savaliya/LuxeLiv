@@ -38,6 +38,7 @@ const CustomNextArrow = (props) => {
 
 const HeroBanner = () => {
     const [activeSlide, setActiveSlide] = useState(0);
+    const [showContent, setShowContent] = useState(false);
 
     const settings = {
         dots: false,
@@ -53,7 +54,7 @@ const HeroBanner = () => {
         beforeChange: (current, next) => setActiveSlide(next),
         afterChange: (current) => {
             setActiveSlide(current);
-            setTimeout(() => setShowContent(true), 500); // 500ms delay
+            setTimeout(() => setShowContent(true), 500);
         },
     };
 

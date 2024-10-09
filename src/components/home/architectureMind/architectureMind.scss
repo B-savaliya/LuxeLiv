@@ -92,7 +92,6 @@
                 }
 
                 .feature-label {
-                    // @include font-family('Open Sans');
                     @include font-size(18px);
                     @include font-weight(400);
                     @include line-height(1.667em);
@@ -123,7 +122,6 @@
             }
         }
 
-        // Override some default Slick styles
         .slick-list {
             margin: 0 -10px;
         }

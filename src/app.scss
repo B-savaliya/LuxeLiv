@@ -51,3 +51,39 @@ textarea {
   background-color: var(--theme-selection-bgcolor);
   color: var(--theme-selection-text-color);
 }
+
+/* Customize the entire scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background-color:var(--theme-from-our-blog-bgcolor);
+  border-radius: none;
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background-color: goldenrod; // Semi-transparent goldenrod
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: all 0.3s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(218, 165, 32, 0.9); // More opaque on hover
+  border: 2px solid rgba(218, 165, 32, 0.2);
+}
+
+/* Optional: Horizontal scrollbar */
+::-webkit-scrollbar-horizontal {
+  height: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}

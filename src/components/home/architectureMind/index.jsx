@@ -14,6 +14,7 @@ import propertyFeaturesImg8 from '../../../assets/icons/property-features-icon-8
 import propertyFeaturesImg9 from '../../../assets/icons/property-features-icon-9.png';
 import leftArrowImg from '../../../assets/icons/arrows_left.png';
 import rightArrowImg from '../../../assets/icons/arrows_right.png';
+import { Link } from 'react-router-dom';
 
 const ArchitectureMind = () => {
     const propertyFeatures = [
@@ -59,6 +60,7 @@ const ArchitectureMind = () => {
                             well-being, comfort, and needs of those who inhabit or interact with them. It's
                             about designing environments that blend functionality with aesthetic beauty,
                             fostering a sense of community and belonging.</p>
+                            <Link to="architectureMind/greenhouse">View More</Link>
                     </div>
                     <div className="architecture-mind-image">
                         <img src={ArchitectureMindImage} alt="Architecture Mind" />
