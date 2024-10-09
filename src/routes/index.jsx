@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import DefaultLayout from "./defaultLayout/defaultLayout";
 import Home from "../components/home/index";
-import Greenhouse from "../components/home/architectureMind/greenhouse";
 import Property from "../components/blog";
+import Greenhouse from "../components/home/architectureMind/greenhouse";
 
 const router = createBrowserRouter([
     {
@@ -11,10 +11,10 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home />
+                element: <Home />,
             },
             {
-                path: "/greenhouse",
+                path: "architectureMind/greenhouse",
                 element: <Greenhouse />
             },
             {
