@@ -1,0 +1,77 @@
+@import '../../styles/index.scss';
+
+
+footer {
+    padding-top: 67px;
+
+    .footer-container {
+        max-width: 1300px;
+        margin: 0 auto;
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            .footer-logo {
+                img {
+                    display: block;
+                    height: 30px;
+                }
+            }
+
+            .footer-content-detailes {
+                h2 {
+                    @include font-size('24px');
+                    @include font-family('Old Standard TT');
+                    margin-bottom: 40px;
+                }
+
+                .footer-content-subDetailes {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    a {
+                        color: var(--theme-description-text-color);
+                        transition: .3s ease-in-out;
+
+                        &:hover {
+                            color: var(--theme-color-primary);
+                        }
+                    }
+                }
+
+                .footer-content-social {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    a {
+                        display: flex;
+                        
+                        gap: 10px;
+                        .footer-social-media-icon {
+                            transition: .3s ease-in-out;
+                            cursor: pointer;
+                        }
+
+                        span {
+                            transition: .3s ease-in-out;
+                            color: var(--theme-description-text-color);
+                        }
+
+                        &:hover {
+                            span {
+                                color: var(--theme-backtotop-color)
+                            }
+
+                            .footer-social-media-icon {
+                                fill: var(--theme-backtotop-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

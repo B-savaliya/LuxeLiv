@@ -4,6 +4,7 @@ import ArchitectureMind from './architectureMind'
 import FromOurBlog from './fromOurBlog'
 import OtherProjects from './otherProjects'
 import OurWork from './ourWork'
+import MapSection from './mapSection'
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <OtherProjects />
             <FromOurBlog />
             <OurWork />
+            <MapSection />
         </div>
     )
 }
