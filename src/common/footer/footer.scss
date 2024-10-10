@@ -3,6 +3,7 @@
 
 footer {
     padding-top: 67px;
+    background-color: var(--theme-color-primary);
 
     .footer-container {
         max-width: 1300px;
@@ -11,19 +12,23 @@ footer {
         .footer-content {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+            padding-bottom: 50px;
+            border-bottom: 1px solid #e8e8e8;
 
             .footer-logo {
                 img {
                     display: block;
-                    height: 30px;
+                    height: 50px;
+                    
                 }
             }
 
             .footer-content-detailes {
                 h2 {
-                    @include font-size('24px');
+                    @include font-size(24px);
                     @include font-family('Old Standard TT');
                     margin-bottom: 40px;
+                    color: var(--theme-color-secondary);
                 }
 
                 .footer-content-subDetailes {
@@ -36,7 +41,7 @@ footer {
                         transition: .3s ease-in-out;
 
                         &:hover {
-                            color: var(--theme-color-primary);
+                            color: var(--theme-architecture-mind-color);
                         }
                     }
                 }
@@ -53,11 +58,14 @@ footer {
                         .footer-social-media-icon {
                             transition: .3s ease-in-out;
                             cursor: pointer;
+                            fill: var(--theme-description-text-color);
                         }
 
                         span {
                             transition: .3s ease-in-out;
                             color: var(--theme-description-text-color);
+                            @include font-size(18px);
+                            @include font-weight(400)
                         }
 
                         &:hover {
@@ -71,6 +79,14 @@ footer {
                         }
                     }
                 }
+            }
+        }
+        .footer-privacy-policy{
+            padding: 15px 0;
+            h3{
+                color: var(--theme-description-text-color);
+                @include font-size(12px);
+                @include font-weight(400)
             }
         }
     }
