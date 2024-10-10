@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.scss'
-import logo from '../../assets/logo/tempLogoDarkImg.png'
+import logo from '../../assets/logo/logoDark.jpeg'
 import { Link } from 'react-router-dom'
 
 function Header() {

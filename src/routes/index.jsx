@@ -3,6 +3,7 @@ import DefaultLayout from "./defaultLayout/defaultLayout";
 import Home from "../components/home/index";
 import Property from "../components/blog";
 import Greenhouse from "../components/home/architectureMind/greenhouse";
+import NotFound from "../common/pageNotFound";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             {
                 path: "/blog",
                 element: <Property />
+            },
+            {
+                path: "*",
+                element: <NotFound />
             }
         ],
     },
