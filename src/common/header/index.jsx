@@ -13,7 +13,7 @@ function Header() {
                 <div className='header-actions'>
                     <Link to="/">Home</Link>
                     <Link to="/property">Property</Link>
-                    <Link to="/pages">Pages</Link>
+                    <Link to="/service">Service</Link>
                     <Link to="/blog">Blog</Link>
                     <Link to="/contact">Contact</Link>
                 </div>

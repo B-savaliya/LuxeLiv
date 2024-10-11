@@ -28,7 +28,7 @@ function Footer() {
                         <div className='footer-content-subDetailes'>
                             <Link to="/">Home</Link>
                             <Link to="/about">About Us</Link>
-                            <Link to="/services">Services</Link>
+                            <Link to="/service">Services</Link>
                             <Link to="/contact">Contact</Link>
                             <Link to="/property">Property</Link>
                             <Link to="/pages">Pages</Link>
