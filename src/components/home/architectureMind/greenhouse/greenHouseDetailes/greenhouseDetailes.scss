@@ -8,22 +8,29 @@
 
     .greenhouse-details-btns {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        button {
-            background-color: transparent;
+        gap: 10px; // Space between buttons
+
+        .project-button {
+            display: flex;
+            align-items: center; // Center the icon and text vertically
+            background-color: transparent; // Default background color
             color: var(--theme-color-primary);
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
+            border: none; 
+
+            padding: 10px 15px;
             cursor: pointer;
-            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
+
+            &.active {
+                background-color: var(--theme-backtotop-color);
+                color: var(--theme-color-secondary);
+                width: 100%;
+            }
 
             &:hover {
-                background-color: var(--theme-color-primary);
+                background-color: var(--theme-backtotop-color);
                 color: var(--theme-color-secondary);
+                width: 100%;
             }
         }
     }
@@ -68,8 +75,8 @@
                     line-height: 30px;
                     font-weight: 400;
                     letter-spacing: 0;
-                    color: #7b7b7b;
-                    background-color: #f6f8fb;
+                    color: var(--theme-color-primary);
+                    // background-color: var(--theme-color-secondary);
                     overflow-x: hidden !important;
                     -webkit-font-smoothing: antialiased;
                     text-align: left;
