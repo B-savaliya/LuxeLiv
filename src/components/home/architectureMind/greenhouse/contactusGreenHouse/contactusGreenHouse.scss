@@ -1,0 +1,101 @@
+@import "../../../../../styles/index.scss";
+
+.contact-us-greenhouse {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+    padding-top: 10px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -80%;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../../../assets/images/about-background-img.png');
+        background-size: cover;
+        // background-position: left ;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .contact-us-greenhouse-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        text-align: center;
+
+        .contact-us-greenhouse-title {
+            h4 {
+                @include font-size(16px);
+                @include line-height(23px);
+                color: var(--theme-selection-bgcolor);
+                margin-bottom: 15px;
+            }
+
+            h2 {
+                @include font-size(60px);
+                @include line-height(66px);
+                @include font-weight(500);
+                @include letter-spacing(0.02em);
+                @include font-family("old standard tt");
+                margin-bottom: 15px;
+            }
+
+            .contact-us-greenhouse-title-img {
+                margin-bottom: 30px;
+
+                svg {
+                    path {
+                        stroke: var(--theme-selection-bgcolor);
+                        stroke-width: 2;
+                        stroke-miterlimit: 3;
+                    }
+                }
+            }
+        }
+
+        .contact-us-greenhouse-content {
+            color: var(--theme-description-text-color);
+
+            p {
+                @include font-size(18px);
+                @include line-height(28px);
+            }
+
+            .contact-us-greenhouse-content-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--theme-color-secondary);
+                // display: inline-block;
+                width: fit-content;
+                margin: 0 auto;
+                margin-top: 30px;
+                padding: 15px 30px;
+                background-color: var(--theme-selection-bgcolor);
+
+                &:hover {
+                    background-color: var(--theme-color-primary);
+                    color: var(--theme-selection-bgcolor);
+                    .contact-us-greenhouse-content-button-icon {
+                        transform: translateX(6px);
+                        color: var(--theme-selection-bgcolor);
+                    }
+                }
+
+                a {
+                    @include font-size(18px);
+                    @include line-height(28px);
+                    @include font-weight(600);
+                    transition: all 0.3s ease-in-out;
+                }
+
+                .contact-us-greenhouse-content-button-icon {
+                    margin-left: 10px;
+                    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}

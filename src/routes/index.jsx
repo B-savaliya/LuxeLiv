@@ -5,6 +5,7 @@ import Property from "../components/blog";
 import Greenhouse from "../components/home/architectureMind/greenhouse";
 import NotFound from "../common/pageNotFound"; // Import the NotFound component
 import Service from "../components/servieces/service";
+import AboutUs from "../components/aboutUs";
 
 const router = createBrowserRouter([
     {
@@ -21,11 +22,19 @@ const router = createBrowserRouter([
             },
             {
                 path: "/blog",
+                element: <Greenhouse />
+            },
+            {
+                path: "/property",
                 element: <Property />
             },
             {
                 path: "/service",
                 element: <Service />
+            },
+            {
+                path: "/about",
+                element: <AboutUs />
             }
         ],
     },

@@ -31,7 +31,6 @@ function Footer() {
                             <Link to="/service">Services</Link>
                             <Link to="/contact">Contact</Link>
                             <Link to="/property">Property</Link>
-                            <Link to="/pages">Pages</Link>
                             <Link to="/blog">Blog</Link>
                         </div>
                     </div>
@@ -66,7 +65,8 @@ function Footer() {
                 </div>
                 <div className='footer-privacy-policy'>
                     <h3>
-                        @2024 We Don't Have Policy for This Website
+                        @2024 We have rights reserved 
+                        <p>just for practice purpose</p>
                     </h3>
                 </div>
             </div>

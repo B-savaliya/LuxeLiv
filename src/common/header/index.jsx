@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.scss'
 import logo from '../../assets/logo/logoDark.jpeg'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
     return (
@@ -10,15 +10,16 @@ function Header() {
                 <Link to="/" className='header-logo'>
                     <img src={logo} alt='logo' />
                 </Link>
-                <div className='header-actions'>
-                    <Link to="/">Home</Link>
-                    <Link to="/property">Property</Link>
-                    <Link to="/service">Service</Link>
-                    <Link to="/blog">Blog</Link>
-                    <Link to="/contact">Contact</Link>
-                </div>
+                <nav className='header-actions'>
+                    <NavLink to="/" end>Home</NavLink>
+                    <NavLink to="/blog">Blog</NavLink>
+                    <NavLink to="/property">Property</NavLink>
+                    <NavLink to="/service">Service</NavLink>
+                    <NavLink to="/about">About</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
+                </nav>
             </div>
-        </header >
+        </header>
     )
 }
 
