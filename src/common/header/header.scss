@@ -70,6 +70,12 @@ header {
                         background-position: 0 0;
                     }
                 }
+
+                &.active {
+                    background-color: var(--theme-header-hover-bgcolor);
+                    color: #000;
+                    font-weight: bold;
+                }
             }
         }
     }

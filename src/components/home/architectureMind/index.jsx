@@ -15,6 +15,7 @@ import propertyFeaturesImg9 from '../../../assets/icons/property-features-icon-9
 import leftArrowImg from '../../../assets/icons/arrows_left.png';
 import rightArrowImg from '../../../assets/icons/arrows_right.png';
 import { Link } from 'react-router-dom';
+import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 
 const ArchitectureMind = () => {
     const propertyFeatures = [
@@ -60,7 +61,10 @@ const ArchitectureMind = () => {
                             well-being, comfort, and needs of those who inhabit or interact with them. It's
                             about designing environments that blend functionality with aesthetic beauty,
                             fostering a sense of community and belonging.</p>
-                            <Link to="architectureMind/greenhouse">View More</Link>
+                        <Link to="architectureMind/greenhouse">
+                            <>View More</>
+                            <MdKeyboardDoubleArrowRight size={25} className='architecture-mind-text-button-icon' />
+                        </Link>
                     </div>
                     <div className="architecture-mind-image">
                         <img src={ArchitectureMindImage} alt="Architecture Mind" />

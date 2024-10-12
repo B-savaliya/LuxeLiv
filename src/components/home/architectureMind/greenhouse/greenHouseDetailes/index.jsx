@@ -15,12 +15,12 @@ export default function GreenhouseDetailes() {
         {
             projectcomplex: [
                 {
-                    title: "Delivering High Quality Projects1",
+                    title: "Delivering High Quality Projects",
                     description:
-                        "We are committed to delivering high-quality projects that meet the needs of our clients.",
+                        "Discover your dream home tailored to your unique lifestyle and preferences.",
                     image: propertyImage,
                     subdescription:
-                        "We have a team of experienced professionals who are dedicated to ensuring that every project is completed on time and within budget.",
+                        "Our expert team is dedicated to helping you find and customize the perfect home that reflects your personality and meets all your needs. We understand that your home is more than just a place to live; it's an expression of who you are. That's why we work tirelessly to ensure every detail, from layout to finishes, aligns with your vision and enhances your daily life.",
                 },
             ],
             icon: <IoLocationOutline /> // Add icon for projectcomplex
@@ -28,12 +28,12 @@ export default function GreenhouseDetailes() {
         {
             projectpark: [
                 {
-                    title: "Delivering High Quality Projects2",
+                    title: "Own the Home Meant for You",
                     description:
                         "We are committed to delivering high-quality projects that meet the needs of our clients.",
                     image: propertyImageTwo,
                     subdescription:
-                        "We have a team of experienced professionals who are dedicated to ensuring that every project is completed on time and within budget.",
+                        "We have a team of experienced professionals who are dedicated to ensuring that every project is completed on time and within budget. Our experts bring years of industry knowledge and a passion for excellence to each endeavor. From meticulous planning to precise execution, we leverage cutting-edge technologies and best practices to optimize efficiency without compromising on quality. ",
                 },
             ],
             icon: <TbBrightnessUp /> // Add icon for projectpark
@@ -41,12 +41,12 @@ export default function GreenhouseDetailes() {
         {
             projectgallery: [
                 {
-                    title: "Delivering High Quality Projects3",
+                    title: "Delivering Great New Projects",
                     description:
-                        "We are committed to delivering high-quality projects that meet the needs of our clients.",
+                        "We are committed to bringing innovative and high-quality new projects to life.",
                     image: propertyImageThree,
                     subdescription:
-                        "We have a team of experienced professionals who are dedicated to ensuring that every project is completed on time and within budget.",
+                        "Our team of experts works tirelessly to ensure each new project meets the highest standards of quality and exceeds client expectations. We approach every project with a blend of creativity and precision, leveraging our diverse expertise to tackle challenges and seize opportunities. From conceptualization to final delivery, we maintain a rigorous focus on innovation, sustainability, and functionality. ",
                 },
             ],
             icon: <LiaStoreAltSolid /> // Add icon for projectgallery
@@ -54,12 +54,12 @@ export default function GreenhouseDetailes() {
         {
             projectvilla: [
                 {
-                    title: "Delivering High Quality Projects",
+                    title: "Make Your Realty Dreams a Reality",
                     description:
-                        "We are committed to delivering high-quality projects that meet the needs of our clients.",
+                        "Turn your property aspirations into tangible assets with our expert guidance and support.",
                     image: propertyImage,
                     subdescription:
-                        "We have a team of experienced professionals who are dedicated to ensuring that every project is completed on time and within budget.",
+                        "Our dedicated team of real estate professionals is committed to helping you navigate the market and find the perfect property investment opportunities. With years of experience and in-depth market knowledge, we provide personalized strategies tailored to your unique goals and risk tolerance. We meticulously analyze market trends, property values, and potential growth areas to identify lucrative opportunities that align with your investment objectives.",
                 },
             ],
             icon: <SlDiamond /> // Add icon for projectvilla

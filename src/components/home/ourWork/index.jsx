@@ -1,5 +1,7 @@
 import React from 'react';
 import './ourWork.scss';
+import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const OurWork = () => {
     return (
@@ -23,7 +25,10 @@ const OurWork = () => {
                 <div className="our-work-content">
                     <div className="our-work-content-item">
                         <p>Have a vision? Let's bring it to life. Our team is ready to turn your ideas into reality.</p>
-                        <a href="/contact" className="cta-button">Get in Touch</a>
+                        <Link to="/contact">
+                            <>Get in Touch </>
+                            <MdKeyboardDoubleArrowRight size={25} className='cta-button-icon' />
+                        </Link>
                     </div>
                 </div>
             </div>
