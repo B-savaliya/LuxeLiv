@@ -58,7 +58,7 @@ const StandardProperty = () => {
         <div className="greenhouse-service">
             <div className="service-container">
                 <div className="service-title">
-                    <h1>Standard Property</h1>
+                    <h1>Our Services</h1>
                     <div className="service-title-img">
                         <svg version="1.1" id="layer_973" xmlns="http://www.w3.org/2000/svg"
                             xmlnsXlink="http://www.w3.org/1999/xlink" x="0" y="0" width="65.167"
