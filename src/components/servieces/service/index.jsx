@@ -12,52 +12,44 @@ import Elevator from "../../../assets/icons/property-custom-icon-8.png";
 
 const propertyData = [
   {
-    image: LuxeApplication,
-    title: "Modern Pavillion",
-    description:
-      "Lorem ipsum proin gravida nibh vel velit auctor aliollicitudin",
+      image: LuxeApplication,
+      title: "Modern Pavillion",
+      description: "Sleek, open-concept spaces blending indoor comfort with outdoor aesthetics."
   },
   {
-    image: Wifi,
-    title: "Apartment Block",
-    description:
-      "Lorem ipsum proin gravida nibh vel velit auctor aliollicitudin",
+      image: Wifi,
+      title: "Apartment Block",
+      description: "Efficient, connected living spaces designed for urban comfort and community."
   },
   {
-    image: Swimming,
-    title: "Unique House",
-    description:
-      "Lorem ipsum proin gravida nibh vel velit auctor aliollicitudin",
+      image: Swimming,
+      title: "Unique House",
+      description: "Bespoke residential designs that reflect individual style and functionality."
   },
   {
-    image: Parking,
-    title: "Modern Villa",
-    description:
-      "Lorem ipsum proin gravida nibh vel velit auctor aliollicitudin",
+      image: Parking,
+      title: "Modern Villa",
+      description: "Luxurious, contemporary homes combining elegance with cutting-edge amenities."
   },
   {
-    image: Gym,
-    title: "Beach House",
-    description:
-      "Lorem ipsum proin gravida nibh vel velit auctor aliollicitudin",
+      image: Gym,
+      title: "Beach House",
+      description: "Coastal retreats offering serene living with panoramic ocean views."
   },
   {
-    image: Outdoor,
-    title: "Garden Center",
-    description:
-      "Lorem ipsum proin gravida nibh vel velit auctor aliollicitudin",
+      image: Outdoor,
+      title: "Garden Center",
+      description: "Lush, curated green spaces fostering community and environmental harmony."
   },
   {
-    image: Fireplace,
-    title: "Skyscraper",
-    description:
-      "Lorem ipsum proin gravida nibh vel velit auctor aliollicitudin",
+      image: Fireplace,
+      title: "Skyscraper",
+      description: "Towering architectural marvels redefining urban skylines and lifestyles."
   },
   {
-    image: Elevator,
-    title: "Urban Center",
-    description:
-      "Lorem ipsum proin gravida nibh vel velit auctor aliollicitudin",
+      image: Elevator,
+      title: "Urban Center",
+      description: "Mixed-use developments creating vibrant hubs for work, live, and play."
   }
 ];
 
@@ -66,7 +58,7 @@ const Service = () => {
     <div className="service">
       <div className="service-container">
         <div className="service-title">
-          <h1>Standard Property</h1>
+          <h1>Our Services</h1>
           <div className="service-title-img">
             <svg version="1.1" id="layer_973" xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink" x="0" y="0" width="65.167"
@@ -79,8 +71,9 @@ const Service = () => {
         </div>
         <div className="service-grid">
           {propertyData.map((property, index) => (
-            <div key={index} className="service-card">
-              <div className="service-image-container">
+            <div key={index} className="service-card-container">
+              <div className="service-card">
+                <div className="service-image-container">
                 <img
                   src={property.image}
                   alt={property.title}
@@ -90,6 +83,7 @@ const Service = () => {
               <div className="service-info">
                 <h2 className="service-title-card">{property.title}</h2>
                 <p className="service-location">{property.description}</p>
+                </div>
               </div>
             </div>
           ))}
