@@ -1,5 +1,5 @@
 import React from "react";
-import "./PropertyCards.scss";
+import "./propertyCards.scss";
 import propertyData from "../propertyData";
 
 const PropertyCards = () => {
