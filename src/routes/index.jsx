@@ -6,6 +6,7 @@ import Greenhouse from "../components/home/architectureMind/greenhouse";
 import NotFound from "../common/pageNotFound"; // Import the NotFound component
 import Service from "../components/servieces/service";
 import AboutUs from "../components/aboutUs";
+import Projects from "../components/projects";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path: "/about",
                 element: <AboutUs />
+            },
+            {
+                path: "/projects",
+                element: <Projects />
             }
         ],
     },
