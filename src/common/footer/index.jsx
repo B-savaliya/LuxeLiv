@@ -27,11 +27,12 @@ function Footer() {
                         <h2>Sitemap</h2>
                         <div className='footer-content-subDetailes'>
                             <Link to="/">Home</Link>
-                            <Link to="/about">About Us</Link>
-                            <Link to="/service">Services</Link>
-                            <Link to="/contact">Contact</Link>
-                            <Link to="/property">Property</Link>
                             <Link to="/blog">Blog</Link>
+                            <Link to="/property">Property</Link>
+                            <Link to="/projects">Projects</Link>
+                            <Link to="/service">Services</Link>
+                            <Link to="/about">About Us</Link>
+                            <Link to="/contact">Contact</Link>
                         </div>
                     </div>
                     <div className='footer-content-detailes'>
