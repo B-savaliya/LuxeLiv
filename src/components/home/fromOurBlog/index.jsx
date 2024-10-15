@@ -1,5 +1,4 @@
-import React, { useRef, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,40 +8,14 @@ import fromOurBlogImg2 from '../../../assets/images/blog-post-2.webp';
 import fromOurBlogImg3 from '../../../assets/images/blog-post-3.jpg';
 import fromOurBlogImg4 from '../../../assets/images/blog-post-4.jpg';
 
-export const blogPosts = [
-    { 
-        image: fromOurBlogImg1, 
-        alt: 'Modern Architecture', 
-        title: 'Modern Architecture', 
-        description: 'Discover cutting-edge designs shaping our urban landscapes. From sustainable skyscrapers to innovative residential concepts, explore how modern architecture is redefining our living spaces and cityscapes.',
-        type: 'modernArchitecture'
-    },
-    { 
-        image: fromOurBlogImg2, 
-        alt: 'Luxury Estates', 
-        title: 'Luxury Estates', 
-        description: 'Step into the world of opulent living. From sprawling mansions to exclusive penthouses, uncover the exquisite details, premium amenities, and breathtaking locations that define the pinnacle of luxury real estate.',
-        type: 'luxuryEstates'
-    },
-    { 
-        image: fromOurBlogImg3, 
-        alt: 'Interior Design', 
-        title: 'Interior Design', 
-        description: 'Dive into the latest interior design trends of 2023. From biophilic elements to smart home integration, learn how to transform your living spaces into stylish, functional, and personalized sanctuaries.',
-        type: 'interiorDesign'
-    },
-    { 
-        image: fromOurBlogImg4, 
-        alt: 'Smart Homes', 
-        title: 'Smart Homes', 
-        description: 'Explore the future of living with smart home technology. Discover how AI, IoT, and automation are revolutionizing our daily lives, enhancing comfort, security, and energy efficiency in modern homes.',
-        type: 'smartHomes'
-    }
-];
-
 const FromOurBlog = () => {
-    const location = useLocation();
-    const fromOurBlogRef = useRef(null);
+    const blogPosts = [
+        { image: fromOurBlogImg1, alt: 'Blog post 1', title: 'Modern Architecture', description: 'Exploring the latest trends in modern architectural design.' },
+        { image: fromOurBlogImg2, alt: 'Blog post 2', title: 'Sustainable Living', description: 'How sustainable architecture is shaping urban living.' },
+        { image: fromOurBlogImg3, alt: 'Blog post 3', title: 'Interior Design', description: 'The most popular interior design trends for 2023.' },
+        { image: fromOurBlogImg4, alt: 'Blog post 4', title: 'Smart Homes', description: 'Integrating technology for smarter, more efficient homes.' },
+    ];
+
     const settings = {
         dots: false,
         infinite: true,
@@ -54,14 +27,8 @@ const FromOurBlog = () => {
         autoplaySpeed: 2000,
     };
 
-    useEffect(() => {
-        if (location.state?.scrollToFromOurBlog && fromOurBlogRef.current) {
-            fromOurBlogRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-    }, [location]);
-
     return (
-        <div ref={fromOurBlogRef} className='from-our-blog-wrapper'>
+        <div className='from-our-blog-wrapper'>
             <div className='from-our-blog-container'>
                 <div className='from-our-blog-header'>
                     <h2 className='from-our-blog-title'>From Our Blog</h2>
@@ -78,7 +45,7 @@ const FromOurBlog = () => {
                 <div className='from-our-blog-content'>
                     <Slider {...settings}>
                         {blogPosts.map((post, index) => (
-                            <Link to={`/blog/${index}`} key={index} className='from-our-blog-content-item'>
+                            <div key={index} className='from-our-blog-content-item'>
                                 <div className='from-our-blog-content-item-img'>
                                     <img src={post.image} alt={post.alt} />
                                 </div>
@@ -86,7 +53,7 @@ const FromOurBlog = () => {
                                     <h3>{post.title}</h3>
                                     <p>{post.description}</p>
                                 </div>
-                            </Link>
+                            </div>
                         ))}
                     </Slider>
                 </div>

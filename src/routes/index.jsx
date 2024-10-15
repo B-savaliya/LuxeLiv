@@ -3,11 +3,10 @@ import DefaultLayout from "./defaultLayout/defaultLayout";
 import Home from "../components/home/index";
 import Property from "../components/blog";
 import Greenhouse from "../components/home/architectureMind/greenhouse";
-import NotFound from "../common/pageNotFound";
+import NotFound from "../common/pageNotFound"; // Import the NotFound component
 import Service from "../components/servieces/service";
 import AboutUs from "../components/aboutUs";
 import Projects from "../components/projects";
-import BlogInsider from "../components/home/fromOurBlog/blogInsider";
 
 const router = createBrowserRouter([
     {
@@ -17,15 +16,6 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
-            },
-            {
-                path: "/blog/:postId",
-                element: (
-                    <>
-                        {/* {console.log("BlogInsider route matched")} */}
-                        <BlogInsider />
-                    </>
-                )
             },
             {
                 path: "architectureMind/greenhouse",
@@ -50,12 +40,12 @@ const router = createBrowserRouter([
             {
                 path: "/projects",
                 element: <Projects />
-            },
+            }
         ],
     },
     {
-        path: "*",
-        element: <NotFound />
+        path: "*", // This will catch all undefined routes
+        element: <NotFound /> // Render the NotFound component without header/footer
     }
 ]);
 
