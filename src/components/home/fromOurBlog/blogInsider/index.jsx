@@ -1,13 +1,11 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { MdArrowBack } from 'react-icons/md'; // Import the arrow icon
+import { MdArrowBack } from 'react-icons/md';
 import './blogInsider.scss';
 
-// Import the blog post data
 import { blogPosts } from '../index';
 
-// Import all image sets
-import modernArchitecture1 from '../../../../assets/images/blogInsiderModern1.jpg';
+import modernArchitecture1 from '../../../../assets/images/blogInsidermodern1.jpg';
 import modernArchitecture2 from '../../../../assets/images/blogInsiderModern2.jpg';
 import modernArchitecture3 from '../../../../assets/images/blogInsiderModern3.jpg';
 import modernArchitecture4 from '../../../../assets/images/blogInsiderModern4.jpg';
@@ -62,7 +60,7 @@ const BlogInsider = () => {
             <button onClick={handleBackClick} className='back-button'>
                 <MdArrowBack className='back-arrow' /> Back
             </button>
-            <div className='blog-insider-hero' style={{backgroundImage: `url(${post.image})`}}>
+            <div className='blog-insider-hero' style={{ backgroundImage: `url(${post.image})` }}>
                 <div className='blog-insider-hero-content'>
                     <h1 className='blog-insider-title'>{post.title}</h1>
                     <div className='blog-insider-title-underline'>
