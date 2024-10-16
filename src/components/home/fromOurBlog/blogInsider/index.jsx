@@ -6,11 +6,11 @@ import './blogInsider.scss';
 import { blogPosts } from '../index';
 
 import modernArchitecture1 from '../../../../assets/images/blogInsidermodern1.jpg';
-import modernArchitecture2 from '../../../../assets/images/blogInsiderModern2.jpg';
-import modernArchitecture3 from '../../../../assets/images/blogInsiderModern3.jpg';
-import modernArchitecture4 from '../../../../assets/images/blogInsiderModern4.jpg';
-import modernArchitecture5 from '../../../../assets/images/blogInsiderModern5.jpg';
-import modernArchitecture6 from '../../../../assets/images/blogInsiderModern6.jpg';
+import modernArchitecture2 from '../../../../assets/images/blogInsidermodern2.jpg';
+import modernArchitecture3 from '../../../../assets/images/blogInsidermodern3.jpg';
+import modernArchitecture4 from '../../../../assets/images/blogInsidermodern4.jpg';
+import modernArchitecture5 from '../../../../assets/images/blogInsidermodern5.jpg';
+import modernArchitecture6 from '../../../../assets/images/blogInsidermodern6.jpg';
 
 import interiorDesign1 from '../../../../assets/images/blogInsiderInterior1.jpg';
 import interiorDesign2 from '../../../../assets/images/blogInsiderInterior2.jpg';
