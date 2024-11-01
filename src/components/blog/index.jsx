@@ -16,27 +16,26 @@ import blogImg7 from '../../assets/images/crafts & culture.webp'
 import blogImg8 from '../../assets/images/cultureHeritage.webp'
 import blogImg9 from '../../assets/images/cultureHeritage2.webp'
 
-const Blog = () => {
-    // Object containing all blog images
-    const blogImages = {
-        blogImg1,
-        blogImg2,
-        blogImg3,
-        blogImg4,
-        blogImg5,
-        blogImg6,
-        blogImg7,
-        blogImg8,
-        blogImg9
-    };
+export const blogImages = {
+    blogImg1,
+    blogImg2,
+    blogImg3,
+    blogImg4,
+    blogImg5,
+    blogImg6,
+    blogImg7,
+    blogImg8,
+    blogImg9
+};
 
+const Blog = () => {
     return (
         <div className="blog">
-            <BlogHB images={blogImages}/>
-            <BlogCard images={blogImages}/>
-            <MarketTrends images={blogImages}/>
-            <CraftsCulture images={blogImages}/>
-            <PropertyWithCulture images={blogImages}/>
+            <BlogHB images={blogImages} />
+            <BlogCard images={blogImages} />
+            <MarketTrends images={blogImages} />
+            <CraftsCulture images={blogImages} />
+            <PropertyWithCulture images={blogImages} />
         </div>
     )
 }

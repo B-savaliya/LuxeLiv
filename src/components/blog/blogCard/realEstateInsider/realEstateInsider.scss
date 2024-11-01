@@ -1,0 +1,68 @@
+@import "../../../../styles/index.scss";
+
+.real-estate-insider {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+
+    .back-button {
+        position: absolute;
+        top: 2rem;
+        left: -9%;
+        z-index: 10;
+        background-color: var(--theme-backtotop-color);
+        color: var(--theme-color-secondary);
+        border: none;
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 16px;
+
+        &:hover {
+            background-color: var(--theme-color-primary);
+            color: var(--theme-backtotop-color);
+            transform: translateX(-5px);
+        }
+
+        .back-arrow {
+            margin-right: 0.5rem;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .blog-hero-image {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 40px;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .blog-content {
+        h3 {
+            margin-bottom: 25px;
+        }
+
+        h4 {
+            margin: 30px 0 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+    }
+}

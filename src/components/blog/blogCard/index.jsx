@@ -1,7 +1,14 @@
 import React from 'react';
 import './blogCard.scss'
+import { useNavigate } from 'react-router-dom';
 
 const BlogCard = ({ images }) => {
+    const navigate = useNavigate();
+
+    const handleReadMore = (postId) => {
+        navigate(`/blog/realEstate/details/${postId}`);
+    };
+
     const blogPosts = [
         { id: 1, title: "5 Tips for First-Time Home Buyers", image: images.blogImg1, excerpt: "Navigate the home buying process with confidence using these expert tips..." },
         { id: 2, title: "Real Estate Market Trends 2023", image: images.blogImg2, excerpt: "Discover the latest trends shaping the real estate market this year..." },
@@ -26,10 +33,9 @@ const BlogCard = ({ images }) => {
             <p className="section-subtitle">Expert advice and analysis to help you make informed real estate decisions</p>
             <div className="blog-card-grid">
                 {blogPosts.map(post => (
-                    <div key={post.id} className="blog-card">
+                    <div key={post.id} className="blog-card" onClick={() => handleReadMore(post.id)}>
                         <div className="blog-card-image" style={{ backgroundImage: `url(${post.image})` }}>
                             <div className="blog-card-overlay">
-                                <button className="read-more-btn">Read More</button>
                             </div>
                         </div>
                         <div className="blog-card-content">
