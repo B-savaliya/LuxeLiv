@@ -10,6 +10,8 @@ import Projects from "../components/projects";
 import BlogInsider from "../components/home/fromOurBlog/blogInsider";
 import Contact from "../components/contact";
 import Blog from "../components/blog";
+import RealEstateInsider from "../components/blog/blogCard/realEstateInsider";
+import { blogImages } from "../components/blog";
 
 const router = createBrowserRouter([
     {
@@ -21,13 +23,12 @@ const router = createBrowserRouter([
                 element: <Home />,
             },
             {
+                path: "/blog/realEstate/details/:id",
+                element: <RealEstateInsider images={blogImages} />
+            },
+            {
                 path: "/blog/:postId",
-                element: (
-                    <>
-                        {/* {console.log("BlogInsider route matched")} */}
-                        <BlogInsider />
-                    </>
-                )
+                element: <BlogInsider />
             },
             {
                 path: "architectureMind/greenhouse",
