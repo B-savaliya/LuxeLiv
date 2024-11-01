@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import DefaultLayout from "./defaultLayout/defaultLayout";
 import Home from "../components/home/index";
-import Property from "../components/blog";
+import Property from "../components/property";
 import Greenhouse from "../components/home/architectureMind/greenhouse";
 import NotFound from "../common/pageNotFound";
 import Service from "../components/servieces/service";
@@ -9,6 +9,7 @@ import AboutUs from "../components/aboutUs";
 import Projects from "../components/projects";
 import BlogInsider from "../components/home/fromOurBlog/blogInsider";
 import Contact from "../components/contact";
+import Blog from "../components/blog";
 
 const router = createBrowserRouter([
     {
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/blog",
-                element: <Greenhouse />
+                element: <Blog />
             },
             {
                 path: "/property",
