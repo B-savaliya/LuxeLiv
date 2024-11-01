@@ -42,6 +42,7 @@
 
             &:hover {
                 transform: translateY(-5px);
+                color: var(--theme-backtotop-color);
 
                 .about-us-content-item-img {
 
@@ -87,9 +88,6 @@
                     letter-spacing: 1px;
                     transform: rotate(270deg) translateX(-40%);
 
-                    &:hover {
-                        color: var(--theme-backtotop-color);
-                    }
                 }
             }
 
