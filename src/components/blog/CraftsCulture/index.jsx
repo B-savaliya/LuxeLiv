@@ -1,5 +1,5 @@
 import React from 'react'
-import "./craftsCulture.scss"
+import "./CraftsCulture.scss"
 
 const CraftsCulture = ({ images }) => {
     return (
