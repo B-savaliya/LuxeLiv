@@ -1,6 +1,18 @@
 @import '../../styles/index.scss';
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform .6s ease-in-out;
+    transform: translateY(0);
+    z-index: 1000;
+
+    &.hidden {
+        transform: translateY(-100%);
+    }
+
     color: var(--theme-header-text);
     background-color: var(--theme-color-secondary);
     padding: 0 40px;

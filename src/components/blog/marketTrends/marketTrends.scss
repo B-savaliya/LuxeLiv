@@ -1,0 +1,92 @@
+@import '../../../styles/index.scss';
+
+.market-trends {
+    padding: 50px 0;
+    background-color: var(--theme-color-light);
+    text-align: center;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 12px;
+        color: var(--theme-color-primary);
+        @include font-size(60px);
+        @include font-weight(400);
+        @include line-height(60px);
+        @include font-family("Old Standard TT");
+    }
+
+    .market-trends-title-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 32px;
+
+        svg {
+            width: 60px;
+            height: 20px;
+
+            path {
+                stroke: var(--theme-from-our-blog-title-color);
+                stroke-width: 2;
+            }
+        }
+    }
+
+    .trends-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .trend-item {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .trend-icon {
+            font-size: 3rem;
+            color: var(--theme-backtotop-color);
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--theme-color-primary);
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--theme-text-color);
+            line-height: 1.6;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .market-trends {
+        h2 {
+            font-size: 2.4rem;
+        }
+
+        .trend-item {
+            h3 {
+                font-size: 1.6rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
